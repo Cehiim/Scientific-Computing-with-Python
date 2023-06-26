@@ -85,7 +85,7 @@ def create_spend_chart(categories): # Função para imprimir um gráfico apresen
     aux = len(aux)
     if(aux > max):
       max = aux
-  for i in range(max): # Nessas repetições é gerado o nome das categorias de forma vertical
+  for i in range(max): # Nessas repetições é gerado o nome das categorias de forma vertical que representam o eixo X
     msg += '    '
     for j in range(size):
       aux = categories[j].name
