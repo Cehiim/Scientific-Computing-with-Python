@@ -56,4 +56,5 @@ def arithmetic_arranger(problems, solve = False):
     return arranged_problems
 
 
+#Exemplo
 print(arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True))
