@@ -100,6 +100,7 @@ def create_spend_chart(categories): # Função para imprimir um gráfico apresen
   return msg
 
 
+# Exemplo
 food = Category("Food")
 food.deposit(1000, "initial deposit")
 food.withdraw(10.15, "groceries")
