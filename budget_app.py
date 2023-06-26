@@ -58,13 +58,13 @@ class Category:
 def create_spend_chart(categories): # Função para imprimir um gráfico apresentando a porcentagem gasta de cada categoria listada
   size = len(categories)
   total_spend = 0
-  spend_list = [0] * size
-  for i in range(size):
+  spend_list = [0] * size # Lista para registrar o gasto de cada categoria
+  for i in range(size): # Nessas repetições são registrados o gasto total e o gasto em cada categoria
     for j in range(len(categories[i].ledger)):
       amount = categories[i].ledger[j].get("amount")
       if(amount < 0):
-        total_spend += abs(amount) # É registrado o gasto total
-        spend_list[i] += abs(amount) # É registrado o gasto em cada categoria
+        total_spend += abs(amount)
+        spend_list[i] += abs(amount)
 
   msg = "Percentage spent by category\n" # Título
   for i in range(100, -10, -10): # Nessa repetição é gerado os valores do eixo Y
