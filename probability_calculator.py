@@ -43,6 +43,7 @@ def experiment(hat, expected_balls, num_balls_drawn, num_experiments): # Funçã
   return successes / num_experiments # Retorna a quantia de testes com sucesso dividido pelo número de experimentos usados
 
 
+# Exemplo
 hat = Hat(blue=4, red=2, green=6)
 probability = experiment(
     hat=hat,
