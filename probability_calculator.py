@@ -23,7 +23,8 @@ class Hat:
     return out
         
 
-def experiment(hat, expected_balls, num_balls_drawn, num_experiments): # Função que retorna a probabilidade de retirar uma porção de bolas desejavadas                                                                                                                             # com base na quantidade de bolas que podem ser retiradas por vez e no número de testes
+def experiment(hat, expected_balls, num_balls_drawn, num_experiments): # Função que retorna a probabilidade de retirar uma porção de bolas desejavadas
+                                                                       # com base na quantia de bolas que podem ser retiradas por vez e no número de testes
   successes = 0
   exp = list()
   for color, num in expected_balls.items(): # Insere as bolas desejadas na lista
